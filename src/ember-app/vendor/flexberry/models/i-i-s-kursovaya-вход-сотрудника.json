@@ -1,0 +1,125 @@
+﻿{
+  "name": "IISKursovayaВходСотрудника",
+  "modelName": "i-i-s-kursovaya-вход-сотрудника",
+  "className": "ВходСотрудника",
+  "nameSpace": "IIS.Kursovaya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудник",
+      "relatedTo": "i-i-s-kursovaya-сотрудник",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "регистрацВхода",
+      "relatedTo": "i-i-s-kursovaya-регистрац-входа",
+      "inverse": "входСотрудника"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ВходСотрудникаE",
+      "modelName": "i-i-s-kursovaya-вход-сотрудника",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудник",
+          "belongsTo": [
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудник.Должности",
+              "belongsTo": [],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "должность",
+                  "caption": "Должность",
+                  "hidden": false,
+                  "index": 2
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "должности",
+              "relatedTo": "i-i-s-kursovaya-должности",
+              "inverse": null
+            },
+            {
+              "lookupValue": null,
+              "lookupValueField": null,
+              "relationName": "Сотрудник.Карта",
+              "belongsTo": [
+                {
+                  "lookupValue": null,
+                  "lookupValueField": null,
+                  "relationName": "Сотрудник.Карта.Комната",
+                  "belongsTo": [],
+                  "hidden": false,
+                  "attrs": [
+                    {
+                      "name": "номерКомнаты",
+                      "caption": "Комната",
+                      "hidden": false,
+                      "index": 4
+                    }
+                  ],
+                  "index": -1,
+                  "type": null,
+                  "caption": "",
+                  "name": "комната",
+                  "relatedTo": "i-i-s-kursovaya-комната",
+                  "inverse": null
+                }
+              ],
+              "hidden": false,
+              "attrs": [
+                {
+                  "name": "кодКарты",
+                  "caption": "Номер карты",
+                  "hidden": false,
+                  "index": 3
+                }
+              ],
+              "index": -1,
+              "type": null,
+              "caption": "",
+              "name": "карта",
+              "relatedTo": "i-i-s-kursovaya-карта",
+              "inverse": null
+            }
+          ],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "Сотрудник",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "сотрудник",
+          "relatedTo": "i-i-s-kursovaya-сотрудник",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

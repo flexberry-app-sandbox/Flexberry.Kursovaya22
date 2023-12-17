@@ -1,0 +1,81 @@
+﻿{
+  "applicationCaption": "Kursovaya",
+  "applicationTitle": "Kursovaya",
+  "items": [
+    {
+      "link": null,
+      "menuName": "отель",
+      "caption": "Отель",
+      "title": "Отель",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya-комната-l",
+          "menuName": null,
+          "caption": "Комната",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya-карта-l",
+          "menuName": null,
+          "caption": "Карта",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": null,
+          "menuName": "персонал",
+          "caption": "Персонал",
+          "title": "Персонал",
+          "children": [
+            {
+              "link": "i-i-s-kursovaya-должности-l",
+              "menuName": null,
+              "caption": "Должности",
+              "title": "Должности",
+              "children": null
+            },
+            {
+              "link": "i-i-s-kursovaya-сотрудник-l",
+              "menuName": null,
+              "caption": "Сотрудники",
+              "title": "Сотрудник",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "клиенты",
+          "caption": "Клиенты",
+          "title": "Клиенты",
+          "children": [
+            {
+              "link": "i-i-s-kursovaya-гость-l",
+              "menuName": null,
+              "caption": "Гости",
+              "title": "Гость",
+              "children": null
+            }
+          ]
+        },
+        {
+          "link": null,
+          "menuName": "документация",
+          "caption": "Документация",
+          "title": "Документация",
+          "children": [
+            {
+              "link": "i-i-s-kursovaya-регистрац-входа-l",
+              "menuName": null,
+              "caption": "Регистрация входа в номер",
+              "title": "Регистрац входа",
+              "children": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Должности",
+      "projection": "ДолжностиL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Карта",
+      "projection": "КартаL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Сотрудник",
+  "name": "IISKursovayaСотрудникE",
+  "className": "СотрудникE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-сотрудник",
+      "modelProjection": "СотрудникE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-карта-e",
+  "editForm": "i-i-s-kursovaya-карта-e",
+  "external": false,
+  "caption": "Карта",
+  "name": "IISKursovayaКартаL",
+  "className": "КартаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-карта",
+      "modelProjection": "КартаL"
+    }
+  ]
+}

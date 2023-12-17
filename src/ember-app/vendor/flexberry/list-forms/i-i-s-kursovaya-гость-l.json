@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-гость-e",
+  "editForm": "i-i-s-kursovaya-гость-e",
+  "external": false,
+  "caption": "Гость",
+  "name": "IISKursovayaГостьL",
+  "className": "ГостьL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-гость",
+      "modelProjection": "ГостьL"
+    }
+  ]
+}

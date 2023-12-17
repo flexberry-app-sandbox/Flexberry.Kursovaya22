@@ -1,0 +1,120 @@
+﻿{
+  "name": "IISKursovayaКарта",
+  "modelName": "i-i-s-kursovaya-карта",
+  "className": "Карта",
+  "nameSpace": "IIS.Kursovaya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "кодКарты",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "типКарты",
+      "type": "i-i-s-kursovaya-вид-карты",
+      "flexberryType": "ВидКарты",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "комната",
+      "relatedTo": "i-i-s-kursovaya-комната",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "КартаE",
+      "modelName": "i-i-s-kursovaya-карта",
+      "attrs": [
+        {
+          "name": "кодКарты",
+          "caption": "Код карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типКарты",
+          "caption": "Тип карты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "НомерКомнаты",
+          "lookupValueField": "номерКомнаты",
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [],
+          "index": 2,
+          "type": "standard",
+          "caption": "Комната",
+          "name": "комната",
+          "relatedTo": "i-i-s-kursovaya-комната",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "КартаL",
+      "modelName": "i-i-s-kursovaya-карта",
+      "attrs": [
+        {
+          "name": "кодКарты",
+          "caption": "Код карты",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "типКарты",
+          "caption": "Тип карты",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Комната",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "номерКомнаты",
+              "caption": "Комната",
+              "hidden": false,
+              "index": 2
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Комната",
+          "name": "комната",
+          "relatedTo": "i-i-s-kursovaya-комната",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,80 @@
+﻿{
+  "name": "IISKursovayaРегистрацВхода",
+  "modelName": "i-i-s-kursovaya-регистрац-входа",
+  "className": "РегистрацВхода",
+  "nameSpace": "IIS.Kursovaya",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "дата",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "входСотрудника",
+      "relatedTo": "i-i-s-kursovaya-вход-сотрудника",
+      "inverse": "регистрацВхода"
+    },
+    {
+      "name": "входГостя",
+      "relatedTo": "i-i-s-kursovaya-вход-гостя",
+      "inverse": "регистрацВхода"
+    }
+  ],
+  "projections": [
+    {
+      "name": "РегистрацВходаE",
+      "modelName": "i-i-s-kursovaya-регистрац-входа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": [
+        {
+          "projectionName": "ВходГостяE",
+          "caption": "Вход гостя",
+          "name": "входГостя",
+          "relatedTo": "i-i-s-kursovaya-вход-гостя",
+          "inverse": null
+        },
+        {
+          "projectionName": "ВходСотрудникаE",
+          "caption": "Вход сотрудника",
+          "name": "входСотрудника",
+          "relatedTo": "i-i-s-kursovaya-вход-сотрудника",
+          "inverse": null
+        }
+      ]
+    },
+    {
+      "name": "РегистрацВходаL",
+      "modelName": "i-i-s-kursovaya-регистрац-входа",
+      "attrs": [
+        {
+          "name": "дата",
+          "caption": "Дата",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

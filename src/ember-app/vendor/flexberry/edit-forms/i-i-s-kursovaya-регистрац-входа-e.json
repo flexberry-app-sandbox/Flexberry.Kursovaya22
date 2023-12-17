@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": "гость",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "ВходГостя.Гость",
+      "projection": "ГостьL",
+      "detailModelName": "i-i-s-kursovaya-вход-гостя"
+    },
+    {
+      "master": "сотрудник",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "ВходСотрудника.Сотрудник",
+      "projection": "СотрудникL",
+      "detailModelName": "i-i-s-kursovaya-вход-сотрудника"
+    }
+  ],
+  "external": false,
+  "caption": "Регистрация входа в номер",
+  "name": "IISKursovayaРегистрацВходаE",
+  "className": "РегистрацВходаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-регистрац-входа",
+      "modelProjection": "РегистрацВходаE"
+    }
+  ]
+}

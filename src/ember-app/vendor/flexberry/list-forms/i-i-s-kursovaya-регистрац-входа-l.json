@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya-регистрац-входа-e",
+  "editForm": "i-i-s-kursovaya-регистрац-входа-e",
+  "external": false,
+  "caption": "Регистрация входа в номер",
+  "name": "IISKursovayaРегистрацВходаL",
+  "className": "РегистрацВходаL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya-регистрац-входа",
+      "modelProjection": "РегистрацВходаL"
+    }
+  ]
+}
